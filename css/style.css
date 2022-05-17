@@ -1,0 +1,458 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #fff;
+    line-height: 1.5;
+    position: relative;
+
+}
+a{
+    color: #262626;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* Header */
+.header{
+    background: url("/img/home.jpg") no-repeat center center/cover;
+    height: 50vh;
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+.header-2{
+    background: url("/img/people-2557396_1920.jpg") no-repeat center center/cover;
+    width: 90%;
+    height: 35vh;
+    max-width: 1100px;
+    margin: auto;
+}
+.header-3{
+    background: url("/img/contact-us.jpg") no-repeat center center/cover;
+    width: 90%;
+    height: 35vh;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+/* Nav */
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 12px;
+}
+.nav-bar .logo{
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.menu-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+}
+.side-menu{
+    display: flex;
+}
+ul.nav-menu{
+    margin-top: 10px;
+    margin-right: 150px;
+}
+.sign-up{
+    margin-left: 40px;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li{
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+.nav-bar ul li a{
+    padding-bottom: 2px;
+}
+.nav-bar ul li a:hover{
+    border-bottom: #000 solid 1px;
+}
+.nav-bar .sign-up{
+    margin-right: 90px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 0;
+    background: #E0EAE9;
+    color: #5B4866;
+    font-size: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    
+
+}
+.nav-bar .sign-up:hover{
+    opacity: 0.7;
+}
+/* Showcase */
+.showcase{
+    width: 40%;
+    align-items: center;
+    margin-top: 40px;  
+}
+.showcase h1{
+    line-height: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.btn{
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 0;
+    background: #312648;
+    color: #f2f2f2;
+    font-size: 10px;
+    padding: 10px 20px;
+}
+.btn:hover{
+    opacity: 0.7;   
+}
+
+/* Services */
+.services{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin: 40px 100px;
+}
+.services-img i{
+    background: #f2f2f2;
+    border-radius: 50%;
+    margin: 0 50px 20px 50px;
+    
+}
+
+/* About Us */
+/* Not suppose to use grid but changed design half way */
+.about-us{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 0 100px;
+    width: 100%;
+}
+.about-us .message{
+    margin: 50px 0;
+}
+.about-us .message h3{
+    margin-bottom: 10px;
+}
+.about-us .message p{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.message-btn{
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 0;
+    background: #D72F42;
+    color: #f2f2f2;
+    font-size: 10px;
+    padding: 10px 20px;
+}
+/* same with about-us no grid */
+.contact-us{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 40px 100px;
+    width: 100%;
+    height: 25vh;
+}
+.contact-us .message h3{
+    margin: 50px 0 10px 0;
+}
+
+/* Brands */
+.brand{
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+.brand img{
+    width: 50px;
+    margin-left: 20px;
+    padding: 0 30px;
+}
+.brand img:last-child{
+    width: 100px;
+}
+
+/* Footer */
+.footer{
+    width: 90%;
+    margin: auto;
+    max-width: 1100px;
+    height: 30px;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.white{
+    color: #fff;
+}
+
+/* Sign-In */
+.box{
+    display: block;
+    width: 80%;
+    background: #fff;
+    max-width: 900px;
+    min-width: 300px;
+    height: 70vh;
+    margin: 80px auto;
+    padding-top: 20px;
+    box-shadow: #0003;
+    border: #ccc solid 1px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 9px 1px rgba(0, 0, 0, 0.507);
+}
+.grid-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:40px;
+    width: 100%;
+    margin-top: -20px;
+}
+.sign-in-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 73vh;
+    padding: 80px 0 0 0;
+    line-height: 2;   
+}
+.sign-in-box ul.social-media{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.sign-in-box ul.social-media li{
+    border: #ccc solid 1px;
+    border-radius: 50%;
+    padding-left: 10px;
+    width: 30px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #000;
+}
+.sign-in-box ul.social-media li:last-child{
+    margin-right: 0;
+}
+.sign-in-box h1{
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.sign-in-box input{
+    border: 0;
+    background: #ccc;
+    width: 70%;
+    margin-bottom: 10px;
+    height: 30px;
+    padding-left: 20px;
+}
+.sign-in-box a{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.sign-in-box a.sign-in-btn, .create-box a{
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 0;
+    border-radius: 20px;
+    background: #263C54;
+    width: 20%;
+    color: #f2f2f2;
+    font-size: 12px;
+    margin-top: -10px;
+    padding: 10px 30px;
+    padding-left: 60px;
+}
+.sign-in-box a.sign-in-btn:hover{
+    opacity: 0.7;
+}
+.create-box{
+    background: url("/img/sign-in\ \(1\).jpg") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 357px;
+    height: 357px;
+    padding: 150px 0 0 0;
+    line-height: 1.5;
+    border-radius: 30px;
+
+}
+.create-box p{
+    width: 70%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Gallery */
+.gallery-container{
+    width: 80%;
+    margin: auto;
+    max-width: 1100px;
+    text-align: center;
+    padding: 32px;
+}
+.gallery-grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 4px;
+    object-fit: cover;
+}
+.gallery-img{
+    width: 30%;
+    height: 400px;
+    margin: 7px 4px;
+    box-shadow: 5px 5px 9px 1px rgba(0, 0, 0, 0.507);
+}
+
+
+/* Media queries */
+@media(max-width: 800px){
+    body{
+        overflow-x: hidden;
+    }
+    .menu-btn{
+        display: block;
+        margin-right: 70px;
+    }
+    .menu-btn:hover{
+        opacity: 0.7;
+    }
+    .side-menu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #000;
+        background: #F08B01;
+        width: 50%;
+        height: 100%;
+        border-right: #ccc solid 1px;
+        opacity: 0.9;
+        padding: 50px;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out ;
+    }
+    .side-menu ul.nav-menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .side-menu ul.nav-menu li{
+        padding: 10px;
+        border-bottom: #ccc solid 1px;
+        font-size: 14px;
+    }
+    /* An error occurs with the sign-up under the side-menu class so i had to remove it */
+    .side-menu .sign-up{
+        margin-top: 20px;
+        margin-left: -5px;
+        font-size: 14px;
+        opacity: 1;
+    }
+    .side-menu.show{
+        transform: translateX(34px);
+    }
+    .services{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-us .message{
+        margin-top: 20px;
+        width: 90%;
+    }
+    .brand{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .brand img{
+        width: 50px;
+        padding: 0;
+    }
+    .footer{
+        font-size: 15px;
+    }
+    .create-box{
+        height:335px;
+    }
+    .sign-in-box a.sign-in-btn, .create-box a{
+        padding-right: 60px;
+    }
+}
+@media(max-width: 500px){
+    .showcase{
+        width: 80%;
+    }
+    .services{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .about-us{
+        width: 60%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .side-menu.show{
+        transform: translateX(24px);
+    }
+    .grid-box{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+    .create-box{
+        display: none;
+    }
+    .sign-in-box a.sign-in-btn{
+        text-align: center;
+    }
+}
+
